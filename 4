@@ -1,0 +1,14 @@
+function askNumber() {
+  let userInput;
+  do {
+    userInput = prompt("Введите число больше 5:");
+    if (userInput === null) {
+      alert("Отменено пользователем");
+      return; // Выход из функции, если пользователь нажал "Отмена"
+    }
+  } while (isNaN(userInput) || userInput <= 5);
+
+  alert("Поздравляем! Вы ввели число: " + userInput);
+}
+
+askNumber(); // Вызов функции
