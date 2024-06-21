@@ -1,0 +1,19 @@
+function checkVariableAndPrint(variable) {
+  let typeOfVariable = typeof variable;
+
+  if (typeOfVariable === 'string') {
+    if (variable.trim() === '') {
+      console.log('Переменная - пустая строка');
+    } else {
+      console.log('Переменная - строка: ' + variable);
+    }
+  } else if (typeOfVariable === 'number') {
+    if (variable % 2 === 0) {
+      console.log('Переменная - четное число');
+    } else {
+      console.log('Переменная - нечетное число');
+    }
+  } else {
+    console.log('Тип переменной: ' + typeOfVariable);
+  }
+}
